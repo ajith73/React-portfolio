@@ -103,12 +103,11 @@ export default function About() {
               <div className="about__info">
                 <PText>
                   I am from tamil nadu. A place of beauty and
-                  nature. Since my childhood, i love art and design. I always
+                  nature. I always
                   try to design stuff with my unique point of view. I also love
                   to create things that can be usefull to others.
                   <br /> <br />
-                  I started coding since I was in high school. Coding is also an
-                  art for me. I love it and now I have the opportunity to design
+                   Coding is also an art for me. I love it and now I have the opportunity to design
                   along with the coding. I find it really interesting and I
                   enjoyed the process a lot.
                   <br />
@@ -155,7 +154,7 @@ export default function About() {
               />
               <AboutInfoItem
                 title="Design"
-                items={['Photoshop', 'After Effects', 'Figma']}
+                items={['Figma']}
               />
             </div>
            
