@@ -57,7 +57,6 @@ const ProjectSectionStyle = styled.div`
 `;
 
 export default function ProjectsSection() {
-  // console.log(projects);
   return (
     <ProjectSectionStyle>
       <div className="container">
@@ -90,6 +89,7 @@ export default function ProjectsSection() {
                     title={project.name}
                     img={project.img}
                     desc={project.desc}
+                    link={project.link}
                   />
                 </SwiperSlide>
               );

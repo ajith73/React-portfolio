@@ -83,11 +83,13 @@ export default function Projects() {
           </div>
           <div className="projects__allItems">
             {projectsData.map((item) => (
+             
               <ProjectItem
                 key={item.id}
                 title={item.name}
                 desc={item.desc}
                 img={item.img}
+                link={item.link}
               />
             ))}
           </div>

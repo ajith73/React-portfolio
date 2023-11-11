@@ -53,12 +53,20 @@ export default function ContactForm() {
       'template_lf8dz1a',
        {name, email, message},
         'GZqfga5AlmbgIhy0Y')
-        .then((response) => {console.log('message semd successfully', response.status, response.text)
+        .then((response) => {
+          console.log('message semd successfully', response.status, response.text)
+          alert(`hi! ${name}, successfully send your email for 'Ajith'.`)     
+          setName("");
+          setEmail("");
+          setMessage("");
       })
       .catch((err) => {
          console.log('failed', err);
+         alert(`hi! ${name}, your email is not send.`)
+         setName("");
+         setEmail("");
+         setMessage("");
     });
-
   };
      
   

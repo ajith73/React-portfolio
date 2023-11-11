@@ -16,6 +16,7 @@ const ProjectItemStyles = styled.div`
     }
   }
   .projectItem__info {
+    min-height:150px;
     margin-top: 1rem;
     background-color: var(--deep-dark);
     padding: 1rem;
@@ -25,6 +26,12 @@ const ProjectItemStyles = styled.div`
     font-size: 2.2rem;
   }
   .projectItem__desc {
+    font-size: 1.6rem;
+    font-family: 'RobotoMono Regular';
+    margin-top: 1rem;
+  }
+  .projectItem__a {
+    word-wrap: break-word;
     font-size: 1.6rem;
     font-family: 'RobotoMono Regular';
     margin-top: 1rem;
@@ -40,17 +47,22 @@ export default function ProjectItem({
   img = ProjectImg,
   title = 'Project Name',
   desc = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+  link = '',
 }) {
   return (
     <ProjectItemStyles>
       <Link to="/projects" className="projectItem__img">
         <img src={img} alt="project img" />
       </Link>
-      <div className="projectItem__info">
+      <div className="projectItem__info" >
         <Link to="#">
           <h3 className="projectItem__title">{title}</h3>
         </Link>
         <p className="projectItem__desc">{desc}</p>
+        {
+          link !== "" &&
+          <a className="projectItem__a" href={link}>Visit:{link}</a>
+        }
       </div>
     </ProjectItemStyles>
   );

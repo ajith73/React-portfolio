@@ -57,9 +57,10 @@ const AboutPageStyles = styled.div`
   }
   margin-top: 2rem;
   .button {
+    cursor:pointer;
     font-size: 2.2rem;
     background-color: ${(props) =>
-      props.outline ? 'transperant' : 'var(--gray-1)'};
+    props.outline ? 'transperant' : 'var(--gray-1)'};
     padding: 0.7em 2em;
     border: 2px solid var(--gray-1);
     border-radius: 8px;
@@ -107,7 +108,7 @@ export default function About() {
                   try to design stuff with my unique point of view. I also love
                   to create things that can be usefull to others.
                   <br /> <br />
-                   Coding is also an art for me. I love it and now I have the opportunity to design
+                  Coding is also an art for me. I love it and now I have the opportunity to design
                   along with the coding. I find it really interesting and I
                   enjoyed the process a lot.
                   <br />
@@ -118,10 +119,13 @@ export default function About() {
                   place.
                 </PText>
               </div>
-              <button className="button" outline = 'false' onClick={(e) => {
-      e.preventDefault();
-      window.location.href='https://drive.google.com/drive/folders/17BFbjXjhMXZaoqEompZZM_HD62Tu46tn?usp=sharing';
-      }} >Download CV</button>
+              <button className="button" outline='false' 
+              onClick={(e) => {
+                e.preventDefault();
+                window.open('https://drive.google.com/drive/folders/17BFbjXjhMXZaoqEompZZM_HD62Tu46tn?usp=sharing', "_blank")
+                // window.location.href = 'https://drive.google.com/drive/folders/17BFbjXjhMXZaoqEompZZM_HD62Tu46tn?usp=sharing';
+              }} >Download CV</button>
+              {/* onClick={(e) => {window.open("https://drive.google.com/u/1/uc?id=<fileId>&export=download", "_blank");}} */}
             </div>
             <div className="right">
               <img src={AboutImg} alt="me" />
@@ -139,25 +143,36 @@ export default function About() {
                 title="Collage"
                 items={['Diploma in automobile engineering, NPT Collage, pollachi.']}
               />
-              
+
             </div>
             <div className="about__info__item">
               <h1 className="about__info__heading">My Skills</h1>
 
               <AboutInfoItem
                 title="FrontEnd"
-                items={['HTML', 'CSS', 'JavaScript', 'REACT']}
+                items={['HTML', 'SCSS', 'JavaScript', 'jQuery', 'Next.js', 'REACT']}
               />
               <AboutInfoItem
                 title="BackEnd"
-                items={['Node', 'Express', 'MongodB']}
+                items={['Node', 'Express', 'MongodB', 'MySQL']}
               />
               <AboutInfoItem
-                title="Design"
-                items={['Figma']}
+                title="CSS frameworks"
+                items={['Bootstrap', 'Material UI', 'Tailwind']}
+              />
+              <AboutInfoItem
+                title="Cloud computing platforms"
+                items={['AWS']}
+              />
+              <AboutInfoItem
+                title="Version control systems"
+                items={['Git', 'GitHub', 'GitLab', 'Bitbucket']}
+              />
+              <AboutInfoItem
+                title="Deployment"
+                items={['Netlify', 'Heroku', 'GitHub', 'vercel', 'AWS']}
               />
             </div>
-           
           </div>
         </div>
         <ContactBanner />

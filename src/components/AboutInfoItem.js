@@ -11,11 +11,11 @@ const AboutItemStyles = styled.div`
   margin-top: 3rem;
   .title {
     font-size: 2.4rem;
+    margin-right:20px;
   }
   .items {
     display: flex;
     gap: 1.5rem;
-    position: absolute;
     left: 18rem;
   }
   .item {
