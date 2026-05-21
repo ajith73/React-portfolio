@@ -58,9 +58,9 @@ export default function ContactSection() {
         <SectionTitle heading="contact" subheading="get in touch" />
         <div className="contactSection__wrapper">
           <div className="left">
-            <ContactInfoItem icon={<MdLocalPhone />} text="+917395858781" />
+            
             <ContactInfoItem icon={<MdEmail />} text="ajith737353@gmail.com" />
-            <ContactInfoItem text="3/169 Sellappam Palayam, Udumalpet, Tiruppur, Tamil Nadu-642207." />
+            <ContactInfoItem text="Udumalpet, Tiruppur, Tamil Nadu-642207." />
           </div>
           <div className="right">
             <ContactForm />

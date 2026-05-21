@@ -49,7 +49,7 @@ export default function Map() {
       <div className="container">
         <div className="map__card">
           <h3 className="map__card__heading">Here is me</h3>
-          <PText>sellappampalayam, Tiruppur, Tamilnadu.</PText>
+          <PText>Udumalpet, Tiruppur, Tamilnadu.</PText>
           <a
             className="map__card__link"
             href="https://www.google.com/maps/@10.5606649,77.0853739,15z"

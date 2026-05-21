@@ -95,15 +95,11 @@ export default function Footer() {
             heading="Contact Info"
             links={[
               {
-                title: '+917395858781',
-                path: 'tel:+917395858781',
-              },
-              {
                 title: 'ajith737353@gmail.com',
                 path: 'mailto:ajith737353@gmail.com',
               },
               {
-                title: '3/169 Sellappam Palayam, Udumalpet, Tiruppur, Tamil Nadu-642207.',
+                title: 'Udumalpet, Tiruppur, Tamil Nadu-642207.',
                 path: 'https://www.google.com/maps/@10.5606649,77.0853739,15z',
               },
             ]}
